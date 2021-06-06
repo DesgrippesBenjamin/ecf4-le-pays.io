@@ -1,0 +1,161 @@
+/*
+    Theme Name: Le Pays
+    Theme URI: https://capitainewp.io
+    Author: Ben Desg
+    Author URI: https://dysign.fr
+    Description: Mon premier thème !
+    Requires at least: WordPress 5.0
+    Version: 1.0
+*/
+
+/*general*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post__link {
+   text-decoration: none;
+   color: black;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+/*menu*/
+/*
+.menu-menu-principal-container ul{
+   display: flex;
+   list-style: none;
+}
+.menu-menu-principal-container li{
+   margin-right: 3em ;
+}
+.menu-menu-principal-container a{
+   text-decoration: none;
+   color: black;
+}
+
+.menu-menu-principal ul ul {
+   display: none;
+}
+.menu-menu-principal ul li:hover > ul {
+   display: block;
+}
+.menu-menu-principal ul ul {
+   display: none;
+   position: absolute;
+   top: 1,5em;
+   left: 0;
+   z-index: 99999;
+   width: 180px;
+   background: #fff;
+   box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+.menu-menu-principal li {
+   position: relative;
+}*/
+
+/*footer*/
+
+.footer-copyright p {
+   color: white;
+}
+.footer-copyright a {
+   color: white;
+   text-decoration: none;
+}
+
+
+/*table news*/
+
+.table-news {
+   width: 500px;
+}
+.table-contenair-info {
+   width: 40%;
+}
+
+
+ /*article*/
+
+ .article-management {
+    max-width: 500px;
+    margin: auto;
+ }
+
+ .article-management img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+ }
+
+ .article-management-content {
+    width: 500px;
+    margin: 3em auto;
+ }
+
+ /*event*/
+
+ .size-event-news-image {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+ }
+
+ /*archive*/
+ 
+ .article-card {
+    padding: 0px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+ }
+
+ .article-card a {
+   text-decoration: none;
+   color: black;
+ }
+
+ .article-card img{
+   width: 300px;
+   height: 250px;
+   object-fit: cover;
+}
+
+.article-card .info{
+   font-size: 10px;
+   color: gray;
+}
+
+.news {
+   display: flex;
+   flex-direction: column;
+   margin: 2em auto;
+   width: 500px;
+}
+.news h1{
+  text-align: center;
+ }
+
+.news img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+ }
+
+ /*contact page*/
+
+ .contact-use {
+    width: 500px;
+ }
+
+ .contact-use img{
+   width: 500px;
+}
+
+.contact-use-comment{
+   width: 400px;
+   height: 200px;
+}
