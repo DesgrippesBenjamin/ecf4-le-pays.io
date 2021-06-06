@@ -78,7 +78,7 @@
                                     <div class="">
                                         <?php echo substr(get_the_excerpt(), 0, 80) . "…"; ?>
                                     </div>
-                                </a>    
+                                </a>
                             </td>
                         </tr>
                         <?php endwhile;?>
@@ -111,9 +111,6 @@
                                             <i class="far fa-calendar-alt"></i>
                                             &nbsp;
                                             <?php $date_with_year_format  = tribe_get_date_format( true ); ?>
-                                            <?php /* $format = $date_with_year_format; */?>
-                                            <small><?php/* echo tribe_events_latest_date( $format = Tribe__Date_Utils::DBDATETIMEFORMAT ); */?></small>
-                                            <small><?php/* echo tribe_events_earliest_date( $format = Tribe__Date_Utils::DBDATETIMEFORMAT );*/ ?></small>
                                         </div>
                                     </div>
                                     <div class="news-text">
@@ -128,29 +125,29 @@
                     </tbody>
                 </table>
             </div>
-        </div>   
+        </div>
     </div>
     <div class="container">
-            <div class="row">
+        <div class="row">
             <?php $rp = new WP_Query( $lastNews ); ?>
-                <?php if($rp->have_posts()) : while($rp->have_posts()) : $rp->the_post(); ?>
-                <div class="col-md-6 col-lg-3 mb-3 mx-auto">
-                    <div class="article-card  mx-auto">
-                        <a href="<?php the_permalink(); ?>" class="post__link">
-                            <div class="article-image">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <span class="info">Publié le <?php the_time( get_option( 'date_format' ) ); ?></span>
-                            <span class="info">par <?php the_author(); ?></span>
-                            <h5>
-                                <?php the_title(); ?>
-                            </h5>
-                        </a>
-                    </div>
+            <?php if($rp->have_posts()) : while($rp->have_posts()) : $rp->the_post(); ?>
+            <div class="col-md-6 col-lg-3 mb-3 mx-auto">
+                <div class="article-card  mx-auto">
+                    <a href="<?php the_permalink(); ?>" class="post__link">
+                        <div class="article-image">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
+                        <span class="info">Publié le <?php the_time( get_option( 'date_format' ) ); ?></span>
+                        <span class="info">par <?php the_author(); ?></span>
+                        <h5>
+                            <?php the_title(); ?>
+                        </h5>
+                    </a>
                 </div>
-                <?php endwhile;?>
-                <?php wp_reset_postdata(); endif; ?>
             </div>
+            <?php endwhile;?>
+            <?php wp_reset_postdata(); endif; ?>
+        </div>
     </div>
 </div>
 
